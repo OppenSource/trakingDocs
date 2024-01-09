@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      TrackingDocs
+    </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Bootstrap 4 Template For Software Startups"
+    />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugins/simplelightbox/simple-lightbox.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  class="logo-icon me-2"
+                  src="assets/images/coderdocs-logo.svg"
+                  alt="logo"
+                /><span class="logo-text"
+                  >Tracking<span class="text-alt">Docs</span></span
+                ></a
+              >
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <div class="top-search-box d-none d-lg-flex">
+              <form class="search-form">
+                <input
+                  type="text"
+                  placeholder="Recherchez un module ..."
+                  name="search"
+                  class="form-control search-input"
+                />
+                <button type="button" class="btn search-btn" value="Search">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+
+            <ul
+              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
+            >
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-github fa-fw"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
+
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title">
+              <a class="nav-link scrollto active" href="#section-1"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-map-signs"></i></span
+                >Introduction</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-1">Géolocalisation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-2">Bus Scolaire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-3">Etudiants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-4">Chauffeurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-5">Trajets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-1-6">Administrateurs</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-2"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-arrow-down"></i></span
+                >Installation</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-1">Section Item 2.1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-2">Section Item 2.2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-2-3">Section Item 2.3</a>
+            </li> -->
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link scrollto" href="#section-3"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-box"></i></span
+                >APIs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-1">Google Maps API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-2">Angular QR Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-3">Firebase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#item-3-4">Autres APIs</a>
+            </li>
+
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article" id="section-1">
+            <header class="docs-header">
+              <h1 class="docs-heading">
+                Introduction
+                <span class="docs-time">Last updated: 2023-12-31</span>
+              </h1>
+              <section class="docs-intro">
+                <p>
+                  Bienvenue dans l'ère de la gestion de transport simplifiée
+                  avec notre application révolutionnaire : Traking. Conçue pour
+                  répondre aux besoins dynamiques de l'industrie du transport,
+                  Traking offre une solution complète et intelligente pour
+                  optimiser la visibilité, la coordination et l'efficacité de
+                  vos opérations logistiques.
+				  <br>
+				  <br>
+				  Que vous soyez une entreprise de livraison, une flotte de transport, ou un particulier souhaitant suivre vos envois, Traking vous offre une expérience utilisateur intuitive et puissante. Grâce à des fonctionnalités avancées de suivi en temps réel, de gestion des itinéraires et de notification, notre application garantit une traçabilité sans faille de vos colis et véhicules.
+                </p>
+              </section>
+              <!--//docs-intro-->
+
+            
+
+			  
+            <section class="docs-section" id="item-1-1">
+              <h2 class="section-heading">Section 1.1 : Géolocalisation </h2>
+              <p>
+                L'une des fonctionnalités phares de l'application Traking est son système de suivi en temps réel, offrant une transparence totale sur la localisation et les mouvements de chaque véhicule ou colis. Cette fonctionnalité révolutionnaire repose sur une technologie de pointe, combinant la connectivité GPS, les capteurs intelligents et une interface utilisateur intuitive pour fournir des informations en temps réel d'une précision exceptionnelle.
+              </p>
+             <br>
+              <ul>
+                <li>
+                  <strong class="me-1">Localisation Précise  :</strong>
+                  <p>Grâce à la géolocalisation GPS de haute précision, Traking permet de suivre les véhicules et les colis avec une exactitude maximale. Les utilisateurs peuvent visualiser l'emplacement actuel avec une précision allant jusqu'à quelques mètres, assurant ainsi une traçabilité fiable.</p>
+                </li>
+                <li>
+                  <strong class="me-1">Mises à jour en Temps Réel :</strong>
+                  <p>
+					Les utilisateurs bénéficient de mises à jour instantanées sur la position et le statut de leurs envois. Que ce soit une livraison en cours, une étape intermédiaire ou la finalisation d'un trajet, Traking fournit des informations en temps réel pour une prise de décision rapide et éclairée.
+				  </p>
+                </li>
+                <li>
+                  <strong class="me-1">Notifications Personnalisées :</strong>
+                  <p>
+					Les utilisateurs ont la possibilité de définir des notifications personnalisées en fonction de critères spécifiques tels que la livraison imminente, les retards potentiels ou les changements d'itinéraire. Cela garantit une gestion proactive des événements et une communication transparente avec les parties prenantes.
+				  </p>
+                </li>
+              </ul>
+              <h5>Bibliothèque à utiliser :</h5>
+              <ol>
+                <li class="fw-bold">Google Map.</li>
+                <ul>
+                  <li>Caractéristiques : Payante, Très optimisée, Design UI pointu</li>
+                  <li>Documentation : <a href="https://medium.com/@avilaatencioa/ionic-capacitor-google-maps-80ae06183def" target="_blank">Consulter</a> </li>
+                </ul>
+                <li class="fw-bold">Leaflet</li>
+                
+                <ul>
+                  <li>Caractéristiques : Payante, moins optimisée, Design UI simpliste</li>
+                  <li>Documentation : <a href="https://edmirjano.medium.com/using-leaflet-js-openstreetmap-with-ionic-5-5d0110d042fc" target="_blank">Consulter</a> </li>
+                </ul>
+              </ol>
+             
+              
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-2">
+              <h2 class="section-heading">Section 1.2 : Bus Scolaire</h2>
+              <p>
+                Traking est une application complète de gestion des bus scolaires conçue pour simplifier et optimiser le suivi et la coordination du transport des élèves au sein d'un établissement éducatif. Elle vise à améliorer la sécurité, l'efficacité et la communication entre les différentes parties prenantes impliquées dans le transport scolaire.
+              </p>
+              <h5 class="mt-5">Fonctionnalités  Incluses:</h5>
+
+              <ul>
+                <li>
+                  <strong class="me-1">Gestion des conducteurs et des véhicules :  :</strong>
+                  <p>Suivi des conducteurs, de leurs horaires, et de l'état des véhicules. Permet également de gérer les maintenances préventives.</p>
+                </li>
+                <li>
+                  <strong class="me-1">Alertes et notifications  :</strong>
+                  <p>Envoie des notifications en temps réel aux parents et aux responsables en cas de retards, de changements d'itinéraire, ou d'autres événements importants liés au transport scolaire. </p>
+                </li>
+                <li>
+                  <strong class="me-1">Liste des Bus :</strong>
+                  <p>Stockage des données historiques des bus enregistrés, utile pour l'historisation des données.</p>
+                </li>
+                <li>
+                  <strong class="me-1">Inscriptions des Bus :</strong>
+                  <p> Facilite le processus d'inscription des Bus à la plateforme ceci en fonction de certaines règles.</p>
+                </li>
+                <li>
+                  <strong class="me-1">Communication  :</strong>
+                  <p> Plateforme de communication intégrée permettant aux utilisateurs d'obtenir des informations importantes en fonction de leurs statuts et privilèges.</p>
+                </li>
+              </ul>
+              
+              <!--//table-responsive-->
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-3">
+              <h2 class="section-heading">Section 1.3 : Etudiant</h2>
+              <p>
+                <b>Tracking</b> est une application complète de gestion des étudiants destinée à simplifier les processus administratifs et de suivi liés aux activités scolaires. Elle offre des fonctionnalités spécifiques pour les administrateurs, les chauffeurs de bus et les étudiants, favorisant une gestion efficace des informations et des interactions dans le cadre du milieu éducatif.
+              </p>
+             
+              <h5 class="mt-5">Fonctionnalités  Incluses:</h5>
+
+              <ul>
+                <li>
+                  <strong class="me-1">Gestion des étudiants par l'administrateur :</strong>
+                  <ol>
+                    <li>Enregistrement d'un nouvel étudiant avec des informations personnelles, y compris le nom, prénom, classe, etc.</li>
+                    <li>Liste complète des étudiants avec des options de tri et de recherche.</li>
+                    <li>Modification des détails d'un étudiant existant.</li>
+                    <li>Suppression d'un étudiant du système.</li>
+                    <li>Possibilité de scanner le QR Code d'un étudiant pour accéder rapidement à ses informations.</li>
+                  </ol>
+                </li>
+                <li>
+                  <strong class="me-1">Gestion des étudiants par Chauffeur de bus :</strong>
+                  <ol>
+                    <li>Scanner le QR Code d'un étudiant pour valider l'accès à bord du bus.</li>
+                    <li>Accès à une liste des étudiants autorisés à prendre le bus.</li>
+                    <li>Notification en cas d'étudiant non autorisé ou d'autres anomalies.</li>
+                  </ol>
+                </li>
+                <li>
+                  <strong class="me-1">Etudiant :</strong>
+                  <ol>
+                    <li>Accès à son propre QR Code.</li>
+                    <li>Possibilité de demander l'accès au QR Code en cas de besoin, par exemple, pour le montrer au chauffeur du bus.</li>
+                  </ol>
+                </li>
+                <li>
+                  <strong class="me-1">Gestion des accès au bus :</strong>
+                  <ol>
+                    <li>Enregistrement des étudiants autorisés à utiliser le service de bus.</li>
+                    <li>Validation du statut d'accès au bus par le chauffeur grâce au QR Code.</li>
+                  </ol>
+                </li>
+              </ul>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-1-4">
+              <h2 class="section-heading">Section 1.4 : Chauffeurs </h2>
+              <p>
+                <b>Tracking</b> est une application de gestion des chauffeurs conçue pour faciliter l'administration et le suivi des conducteurs de bus au sein d'un établissement éducatif. Elle offre des fonctionnalités spécifiques pour les administrateurs, permettant une gestion efficace des informations liées aux chauffeurs et à leur affectation aux bus.
+              </p>
+             
+              <h5 class="mt-5">Fonctionnalités  Incluses:</h5>
+
+              <ul>
+                <li>
+                  <strong class="me-1">Gestion des chauffeurs par l'administrateur </strong>
+                  <ol>
+                    <li>Enregistrement d'un nouveau chauffeur avec des informations personnelles et professionnelles.</li>
+                    <li>Affectation d'un chauffeur à un bus existant lors de l'enregistrement.</li>
+                    <li>Liste complète des chauffeurs avec des options de tri et de recherche.</li>
+                    <li>Modification des détails d'un chauffeur existant, y compris son affectation à un autre bus.</li>
+                    <li>Suppression d'un chauffeur du système.</li>
+                  </ol>
+                </li>
+                <li>
+                  <strong class="me-1">Affectation des chauffeurs à un bus :</strong>
+                  <ol>
+                    <li>Lors de l'enregistrement et de la modification, l'administrateur doit sélectionner le bus auquel le chauffeur est affecté.</li>
+                    <li>Possibilité de modifier l'affectation d'un chauffeur à un autre bus.</li>
+                    <li>Notification en cas d'étudiant non autorisé ou d'autres anomalies.</li>
+                  </ol>
+                </li>
+                <li>
+                  <strong class="me-1">Scanner le QR Code du chauffeur :</strong>
+                  <ol>
+                    <li>Possibilité pour l'administrateur de scanner le QR Code du chauffeur pour accéder rapidement à ses informations..</li>
+                    <li>Validation de l'accès au bus.</li>
+                  </ol>
+                </li>
+              </ul>
+            </section>
+            <!--//section-->
+            <section class="docs-section" id="item-1-5">
+              <h2 class="section-heading">Section 1.5 : Gestion des trajets</h2>
+              <p>
+                <b>Tracking</b> est une application dédiée à la gestion des trajets, permettant à l'administrateur de planifier, surveiller et ajuster efficacement les itinéraires des bus au sein de l'établissement éducatif. Cette application vise à optimiser la planification des trajets pour assurer un transport sûr et efficace des étudiants.
+              </p>
+              
+             
+              <h5 class="mt-5">Fonctionnalités  Incluses:</h5>
+
+              <ul>
+                <li>
+                  <strong class="me-1">GGestion des trajets par l'administrateur & Chauffeur: </strong>
+                  <ol>
+                    <li>Enregistrement d'un nouveau trajet en spécifiant les arrêts, les horaires de départ et d'arrivée, ainsi que le bus affecté.</li>
+                    <li>Liste complète des trajets avec des options de tri et de recherche.</li>
+                    <li>Modification des détails d'un trajet existant, y compris les arrêts, les horaires, et le bus assigné.</li>
+                    <li>Modification des détails d'un chauffeur existant, y compris son affectation à un autre bus.</li>
+                    <li>Suppression d'un trajet du système.</li>
+                    <li>Affectation d'un bus spécifique à chaque trajet lors de la création ou de la modification.</li>
+                  </ol>
+                </li>
+              </ul>
+            </section>
+            <!--//section-->
+            <section class="docs-section" id="item-1-6">
+              <h2 class="section-heading">Section 1.6</h2>
+              <p>
+                <b>Tracking</b> est une application de gestion des administrateurs conçue pour faciliter l'administration et le suivi des utilisateurs ayant des droits d'administration au sein de l'établissement éducatif. Elle offre des fonctionnalités spécifiques pour l'enregistrement, la modification et la suppression des administrateurs, permettant une gestion efficace des autorisations et des responsabilités.
+              </p>
+              <h5 class="mt-5">Fonctionnalités  Incluses:</h5>
+
+              <ul>
+                <li>
+                  <strong class="me-1">Gestion des administrateurs :  </strong>
+                  <ol>
+                    <li>Enregistrement d'un nouvel administrateur en fournissant des informations d'identification et des autorisations spécifiques.</li>
+                    <li>Liste complète des administrateurs avec des options de tri et de recherche.</li>
+                    <li>Modification des détails d'un administrateur existant, y compris les informations d'identification et les autorisations.</li>
+                    <li>Suppression d'un administrateur du système.</li>
+                    <li>Authentification sécurisée pour l'accès aux fonctionnalités administratives.</li>
+                    <li>La gestion des niveaux d'accès pour garantir la sécurité et la confidentialité des données se fait automatiquement.</li>
+                  </ol>
+                </li>
+              </ul>
+            </section>
+            <!--//section-->
+          </article>
+
+          <article class="docs-article" id="section-2">
+            <header class="docs-header">
+              <h1 class="docs-heading">Installation</h1>
+              <section class="docs-intro">
+                <p>
+                  L'installation d'une application Ionic, telle que "Traking" 
+                  pour la gestion des bus scolaires, nécessite plusieurs étapes. 
+                  Ionic est un framework de développement d'applications 
+                  mobiles basé sur Angular et Cordova. Voici un processus 
+                  d'installation général pour une application Ionic :
+                </p>
+                
+                <h5 class="mt-5">Prérequis :</h5>
+
+                <ul>
+                  <li>
+                    <strong class="me-1">Github :  </strong>
+                    <ol>
+                      <li>Node.js et npm (Node Package Manager) doivent être installés. Vous pouvez les télécharger depuis le site officiel de Node.js : Node.js..</li>
+                      <li>Télechargez le projet sur : <a href="https://github.com/OppenSource/traking" target="_blank" rel="noopener noreferrer">Github</a>.</li>
+                      <li>Suivre les étapes et installer l'application sur votre terminal mobile.</li>
+                      <li>La gestion des niveaux d'accès pour garantir la sécurité et la confidentialité des données se fait automatiquement.</li>
+                    </ol>
+                  </li>
+                </ul>
+              </section>
+              <!--//docs-intro-->
+            </header>
+          </article>
+          <!--//docs-article-->
+
+          <article class="docs-article" id="section-3">
+            <header class="docs-header">
+              <h1 class="docs-heading">APIs</h1>
+              <section class="docs-intro">
+                <p>
+                  L'application Traking repose sur un ensemble d'interfaces de programmation 
+                  d'applications (API) puissantes, visant à optimiser la 
+                   des bus scolaires au sein de l'établissement éducatif. 
+                   Ces API jouent un rôle crucial dans la collecte, la transmission
+                    et la manipulation des données, permettant ainsi une expérience 
+                    utilisateur transparente et efficace. Découvrons brièvement 
+                    les principales API utilisées dans l'application :
+                </p>
+              </section>
+              <!--//docs-intro-->
+            </header>
+            <section class="docs-section" id="item-3-1">
+              <h2 class="section-heading">Google Maps API </h2>
+              <p>
+                L'API Google Maps est intégrée pour la visualisation interactive 
+                des trajets des bus, des emplacements des arrêts et des itinéraires. 
+                Elle offre une cartographie précise et des fonctionnalités avancées
+                 de géolocalisation.
+              </p>
+              <h5 class="mt-5">Documentation de L'API :  </h5>
+              <ul>
+                <li>Consultez la documentation <a href="https://www.npmjs.com/package/@angular/google-maps" target="_blank" rel="noopener noreferrer">ICI</a></li>
+              </ul>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-3-2">
+              <h2 class="section-heading">Angular QR Code Generator</h2>
+              <p>
+                L'API Angular QR Code Generator est utilisée pour la gestion des QR codes. 
+                Elle permet aux administrateurs et ou chauffeurs de scanner rapidement les
+                 QR codes des étudiants, facilitant ainsi l'accès aux informations critiques.
+              </p>
+              <h5 class="mt-5">Documentation de L'API :  </h5>
+              <ul>
+                <li>Consultez la documentation <a href="https://www.npmjs.com/package/angularx-qrcode" target="_blank" rel="noopener noreferrer">ICI</a></li>
+              </ul>
+            </section>
+            <!--//section-->
+
+            <section class="docs-section" id="item-3-3">
+              <h2 class="section-heading">Firebase & Firestore Storage :</h2>
+              <p>
+                Firebase & Firestore Storage  sont utilisés comme backend pour stocker
+                 et synchroniser en temps réel les données de l'application. 
+                 Cette base de données
+                 cloud offre une gestion efficace des informations sur les
+                 étudiants, les chauffeurs, les trajets et les administrateurs.
+              </p>
+            </section>
+
+            <section class="docs-section" id="item-3-4">
+              <h2 class="section-heading">Autres APIs :</h2>
+              <p>
+                <ol>
+                  <li>
+                    <b>Ionic HTTP Client :</b>  Utilisée pour les interactions avec le backend de 
+                    l'application, permettant le transfert sécurisé de données entre le frontend 
+                    et le backend.
+                  </li>
+                  <li>
+                    <b>Google Drive API : :</b>  Intégrée pour faciliter 
+                    le stockage et le partage sécurisé des documents 
+                    importants liés à la gestion des bus scolaires, 
+                    tels que les horaires, les rapports et les politiques.
+                  </li>
+                  <li>
+                    <b>Obit SMS API : </b>  Intégrée pour la gestion des notifications par SMS personnalisés.
+                  </li>
+                </ol>
+              </p>
+            </section>
+            <!--//section-->
+          </article>
+          <!--//docs-article-->
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+  </body>
+</html>
